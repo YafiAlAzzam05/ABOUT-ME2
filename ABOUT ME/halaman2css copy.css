@@ -1,0 +1,134 @@
+/* font google*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri&family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri&family=Maven+Pro:wght@700&family=Poppins&display=swap");
+
+:root {
+	--primary-color: #ffffff;
+	--secondary-color: #242020;
+	--thirdary-color: linear-gradient(315deg, #abd9ff 20%, #d7e1ec 75%);
+}
+.dark-theme {
+	--primary-color: #000000;
+	--secondary-color: #ffffff;
+	--thirdary-color: linear-gradient(315deg, #abd9ff 15%, #242527 90%);
+}
+
+
+
+body {
+	/* background-image: url(a.jpg);
+	background-size: cover; */
+	background-image: var(--thirdary-color);
+}
+
+html,
+body {
+	height: 100%;
+}
+
+.container {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	user-select: none;
+}
+.box {
+	height: 520px;
+	width: 370px;
+	background-color: rgba(255, 255, 255, 0.4);
+	border-radius: 20px;
+	margin: auto;
+	box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.box img {
+	border-radius: 50%;
+	object-fit: cover;
+	border: 5px solid #abd9ff;
+	pointer-events: none;
+}
+
+.box h4 {
+	color: var(--secondary-color);
+	padding-top: 20px;
+	font-style: oblique;
+	font-weight: bold;
+	font-family: "Poppins", sans-serif;
+}
+
+.box .header {
+	color: var(--secondary-color);
+	padding-top: 12px;
+	/* font-weight: bold; */
+	font-size: 35px;
+	font-family: "Maven Pro", sans-serif;
+}
+
+.box a {
+	color: var(--primary-color);
+	text-decoration: none;
+	font-family: "Hind Siliguri", sans-serif;
+}
+
+.box .isi {
+	color: var(--secondary-color);
+	margin-top: 20px;
+	font-family: "Hind Siliguri", sans-serif;
+}
+
+.btn {
+	padding: 0;
+	margin: auto;
+}
+
+.social-links {
+	display: flex;
+}
+
+.social-btn {
+	cursor: pointer;
+	height: 24px;
+	width: 25px;
+	color: #333;
+	border-radius: 10px;
+	box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
+	background: var(--secondary-color);
+	transition: 1s;
+	overflow: hidden;
+}
+
+.social-btn span {
+	width: 0px;
+	transition: 1s;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-size: small;
+	border: none;
+}
+
+.social-btn:hover {
+	width: 120px;
+	border-radius: 5px;
+}
+
+.social-btn:hover span {
+	padding: 1px;
+	width: max-content;
+}
+
+.social-media {
+	padding-top: 75px;
+}
+
+/* image moon */
+.mode {
+	width: 10px;
+	position: absolute;
+	margin-bottom: 40%;
+	margin-left: 25%;
+	cursor: pointer;
+}
